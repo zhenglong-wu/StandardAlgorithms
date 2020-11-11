@@ -13,3 +13,4 @@ let myArray = [1, 2, 3, 6, 7, 3, 7]
 
 print(myArray)
 
+print("Hola")
