@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		645B1984255BF9B900175F7C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645B1983255BF9B900175F7C /* main.swift */; };
+		646F4C4D255EAB2400BE30EE /* StandardAlgorithm.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 646F4C41255EAABA00BE30EE /* StandardAlgorithm.xctest */; };
+		646F4C6E255EABD900BE30EE /* StandardAlgorithmsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F4C6D255EABD900BE30EE /* StandardAlgorithmsTest.swift */; };
+		646F4C78255EABF500BE30EE /* SortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F4C77255EABF500BE30EE /* SortingTest.swift */; };
+		646F4C82255EACC200BE30EE /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F4C81255EACC200BE30EE /* Sorting.swift */; };
+		646F4C87255EAD0700BE30EE /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646F4C81255EACC200BE30EE /* Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,38 @@
 /* Begin PBXFileReference section */
 		645B1980255BF9B900175F7C /* StandardAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StandardAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		645B1983255BF9B900175F7C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		646F4C41255EAABA00BE30EE /* StandardAlgorithm.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardAlgorithm.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		646F4C54255EABA300BE30EE /* Standard Algorithms.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Standard Algorithms.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		646F4C6B255EABD900BE30EE /* StandardAlgorithmsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StandardAlgorithmsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		646F4C6D255EABD900BE30EE /* StandardAlgorithmsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardAlgorithmsTest.swift; sourceTree = "<group>"; };
+		646F4C6F255EABD900BE30EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		646F4C77255EABF500BE30EE /* SortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingTest.swift; sourceTree = "<group>"; };
+		646F4C81255EACC200BE30EE /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		645B197D255BF9B800175F7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646F4C3E255EAABA00BE30EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646F4C51255EABA300BE30EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646F4C68255EABD900BE30EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				645B1982255BF9B900175F7C /* StandardAlgorithms */,
+				646F4C6C255EABD900BE30EE /* StandardAlgorithmsTest */,
 				645B1981255BF9B900175F7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				645B1980255BF9B900175F7C /* StandardAlgorithms */,
+				646F4C41255EAABA00BE30EE /* StandardAlgorithm.xctest */,
+				646F4C54255EABA300BE30EE /* Standard Algorithms.appex */,
+				646F4C6B255EABD900BE30EE /* StandardAlgorithmsTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +95,19 @@
 			isa = PBXGroup;
 			children = (
 				645B1983255BF9B900175F7C /* main.swift */,
+				646F4C81255EACC200BE30EE /* Sorting.swift */,
 			);
 			path = StandardAlgorithms;
+			sourceTree = "<group>";
+		};
+		646F4C6C255EABD900BE30EE /* StandardAlgorithmsTest */ = {
+			isa = PBXGroup;
+			children = (
+				646F4C6D255EABD900BE30EE /* StandardAlgorithmsTest.swift */,
+				646F4C6F255EABD900BE30EE /* Info.plist */,
+				646F4C77255EABF500BE30EE /* SortingTest.swift */,
+			);
+			path = StandardAlgorithmsTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,17 +130,77 @@
 			productReference = 645B1980255BF9B900175F7C /* StandardAlgorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		646F4C40255EAABA00BE30EE /* StandardAlgorithm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646F4C48255EAABB00BE30EE /* Build configuration list for PBXNativeTarget "StandardAlgorithm" */;
+			buildPhases = (
+				646F4C3D255EAABA00BE30EE /* Sources */,
+				646F4C3E255EAABA00BE30EE /* Frameworks */,
+				646F4C3F255EAABA00BE30EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StandardAlgorithm;
+			productName = StandardAlgorithm;
+			productReference = 646F4C41255EAABA00BE30EE /* StandardAlgorithm.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		646F4C53255EABA300BE30EE /* Standard Algorithms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646F4C63255EABA300BE30EE /* Build configuration list for PBXNativeTarget "Standard Algorithms" */;
+			buildPhases = (
+				646F4C50255EABA300BE30EE /* Sources */,
+				646F4C51255EABA300BE30EE /* Frameworks */,
+				646F4C52255EABA300BE30EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Standard Algorithms";
+			productName = "Standard Algorithms";
+			productReference = 646F4C54255EABA300BE30EE /* Standard Algorithms.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		646F4C6A255EABD900BE30EE /* StandardAlgorithmsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646F4C70255EABD900BE30EE /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTest" */;
+			buildPhases = (
+				646F4C67255EABD900BE30EE /* Sources */,
+				646F4C68255EABD900BE30EE /* Frameworks */,
+				646F4C69255EABD900BE30EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StandardAlgorithmsTest;
+			productName = StandardAlgorithmsTest;
+			productReference = 646F4C6B255EABD900BE30EE /* StandardAlgorithmsTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		645B1978255BF9B800175F7C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					645B197F255BF9B800175F7C = {
 						CreatedOnToolsVersion = 12.1;
+					};
+					646F4C40255EAABA00BE30EE = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					646F4C53255EABA300BE30EE = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					646F4C6A255EABD900BE30EE = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -110,16 +218,69 @@
 			projectRoot = "";
 			targets = (
 				645B197F255BF9B800175F7C /* StandardAlgorithms */,
+				646F4C40255EAABA00BE30EE /* StandardAlgorithm */,
+				646F4C53255EABA300BE30EE /* Standard Algorithms */,
+				646F4C6A255EABD900BE30EE /* StandardAlgorithmsTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		646F4C3F255EAABA00BE30EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				646F4C4D255EAB2400BE30EE /* StandardAlgorithm.xctest in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646F4C52255EABA300BE30EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646F4C69255EABD900BE30EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		645B197C255BF9B800175F7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				646F4C82255EACC200BE30EE /* Sorting.swift in Sources */,
 				645B1984255BF9B900175F7C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646F4C3D255EAABA00BE30EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646F4C50255EABA300BE30EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646F4C67255EABD900BE30EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				646F4C87255EAD0700BE30EE /* Sorting.swift in Sources */,
+				646F4C78255EABF500BE30EE /* SortingTest.swift in Sources */,
+				646F4C6E255EABD900BE30EE /* StandardAlgorithmsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +420,112 @@
 			};
 			name = Release;
 		};
+		646F4C46255EAABA00BE30EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StandardAlgorithm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenglongwu.StandardAlgorithm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		646F4C47255EAABA00BE30EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StandardAlgorithm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenglongwu.StandardAlgorithm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		646F4C61255EABA300BE30EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Standard Algorithms/Standard_Algorithms.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Standard Algorithms/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhenglongwu.Standard-Algorithms";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		646F4C62255EABA300BE30EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Standard Algorithms/Standard_Algorithms.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Standard Algorithms/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zhenglongwu.Standard-Algorithms";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		646F4C71255EABD900BE30EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StandardAlgorithmsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenglongwu.StandardAlgorithmsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		646F4C72255EABD900BE30EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StandardAlgorithmsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenglongwu.StandardAlgorithmsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +543,33 @@
 			buildConfigurations = (
 				645B1988255BF9B900175F7C /* Debug */,
 				645B1989255BF9B900175F7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646F4C48255EAABB00BE30EE /* Build configuration list for PBXNativeTarget "StandardAlgorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646F4C46255EAABA00BE30EE /* Debug */,
+				646F4C47255EAABA00BE30EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646F4C63255EABA300BE30EE /* Build configuration list for PBXNativeTarget "Standard Algorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646F4C61255EABA300BE30EE /* Debug */,
+				646F4C62255EABA300BE30EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646F4C70255EABD900BE30EE /* Build configuration list for PBXNativeTarget "StandardAlgorithmsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646F4C71255EABD900BE30EE /* Debug */,
+				646F4C72255EABD900BE30EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
