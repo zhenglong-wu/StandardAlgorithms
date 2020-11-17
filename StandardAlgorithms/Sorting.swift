@@ -39,7 +39,31 @@ class Sorting {
     }
     
     func quickSort(data: [Int]) -> [Int] {
-        var test = data
+        let test = data
+        var sorted = [Int]()
+        var left = [Int]()
+        var right = [Int]()
+        if test.count > 1{
+            for item in test[1..<test.count]{
+                if item < test[0]{
+                    left.append(item)
+                }
+                else{
+                    right.append(item)
+                }
+            }
+            sorted.append(contentsOf: quickSort(data: left))
+            sorted.append(test[0])
+            sorted.append(contentsOf: quickSort(data: right))
+        }
+        else{
+            sorted = test
+        }
+        return sorted
+    }
+    
+    func mergeSort(data: [Int]) -> [Int] {
+    
         return []
     }
     
