@@ -34,7 +34,7 @@ class SortingTest: XCTestCase {
         }
     }
     
-    func testInsertionSortWithIntegerArrayReturnsSortedArray(){
+    func testInsertionSortWithIntegerArrayReturnsSortedArray() {
         
         let sorting = Sorting()
         
@@ -46,7 +46,7 @@ class SortingTest: XCTestCase {
         
     }
     
-    func testInsertionSortWithVariousIntegerArraysReturnsEachOneSorted(){
+    func testInsertionSortWithVariousIntegerArraysReturnsEachOneSorted() {
         
         let sorting = Sorting()
         
@@ -59,7 +59,7 @@ class SortingTest: XCTestCase {
         }
     }
     
-    func testQuickSortWithIntegerArrayReturnsSortedArray(){
+    func testQuickSortWithIntegerArrayReturnsSortedArray() {
         
         let sorting = Sorting()
         
@@ -70,7 +70,7 @@ class SortingTest: XCTestCase {
         XCTAssertEqual(result, expected)
     }
     
-    func testQuickSortWithVariousIntegerArraysReturnsEachOneSorted(){
+    func testQuickSortWithVariousIntegerArraysReturnsEachOneSorted() {
         
         let sorting = Sorting()
         
@@ -83,7 +83,7 @@ class SortingTest: XCTestCase {
         }
     }
     
-    func testMergeSortWithIntegerArrayReturnsSortedArray(){
+    func testMergeSortWithIntegerArrayReturnsSortedArray() {
         
         let sorting = Sorting()
         
@@ -94,7 +94,7 @@ class SortingTest: XCTestCase {
         XCTAssertEqual(result, expected)
     }
     
-    func testMergeSortWithVariousIntegerArraysReturnsEachOneSorted(){
+    func testMergeSortWithVariousIntegerArraysReturnsEachOneSorted() {
         
         let sorting = Sorting()
         
@@ -106,4 +106,5 @@ class SortingTest: XCTestCase {
             XCTAssertEqual(result, test.expected)
         }
     }
+    
 }
