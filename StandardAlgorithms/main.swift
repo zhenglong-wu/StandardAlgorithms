@@ -13,8 +13,7 @@ let myArray = [1, 2, 3, 4, 5, 6, 7]
 
 print(myArray)
 
-for i in 0...myArray.count-1{
-    print("\(myArray[i]) times 2 is:")
-    print(myArray[i]+myArray[i])
-}
+
+
+
 
