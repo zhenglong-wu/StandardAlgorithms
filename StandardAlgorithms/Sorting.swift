@@ -62,9 +62,50 @@ class Sorting {
         return sorted
     }
     
+    func merge(leftArray: [Int], rightArray: [Int]) -> [Int] {
+        
+        var left = 0
+        var right = 0
+        var sorted = [Int]()
+        
+        while left < leftArray.count && right < rightArray.count {
+            if leftArray[left] < rightArray[right] {
+                sorted.append(leftArray[left])
+                left += 1
+            }
+            else if leftArray[left] > rightArray[right] {
+                sorted.append(rightArray[right])
+                right += 1
+            }
+            else {
+                sorted.append(leftArray[left])
+                left += 1
+                sorted.append(rightArray[right])
+                right += 1
+            }
+        }
+        while left < leftArray.count {
+            sorted.append(leftArray[left])
+            left += 1
+        }
+        while right < rightArray.count {
+            sorted.append(rightArray[right])
+            right += 1
+        }
+        return sorted
+    }
+
     func mergeSort(data: [Int]) -> [Int] {
+        
+        let test = data
+        guard test.count > 1 else { return test }
     
-        return []
+        let middleIndex = test.count / 2
+
+        let leftArray = mergeSort(data: Array(test[0..<middleIndex]))
+        let rightArray = mergeSort(data: Array(test[middleIndex..<test.count]))
+        
+        return merge(leftArray: leftArray, rightArray: rightArray)
     }
     
 }
