@@ -7,9 +7,4 @@
 
 import Foundation
 
-class UnknownTest: XCTestCase {
-    
-    func testSumOfFirstAndLastWithIntegerArrayReturnsSum(){
-        
-    }
-}
+

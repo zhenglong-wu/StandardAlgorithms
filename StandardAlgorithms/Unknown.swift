@@ -26,6 +26,24 @@ class Unknown {
     func modeOfSorted(data: [Int]) -> (Int, Int){
         
         let test = data
+        return (0, 0)
+    
+    }
+    
+    func secondSmallestInteger(data: [Int]) -> Int? {
+    
+        let test = data
+        if test.count < 2{
+            return nil
+        }
+        else{
+            
+        }
+    }
+    
+    func modeOfUnsorted(data: [Int]) -> (Int, Int) {
+        
+        let test = data
         var current: Int
         var count: Int = 0
         var modeCount: Int
