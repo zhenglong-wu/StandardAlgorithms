@@ -11,7 +11,7 @@ class Searching {
     
     func linearSearch(data: [Int], target: Int) -> Bool {
         
-        var test = data
+        let test = data
         var hasFound = false
         for i in 0...data.count-1{
             if test[i] == target{
