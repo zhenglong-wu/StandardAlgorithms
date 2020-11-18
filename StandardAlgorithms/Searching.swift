@@ -21,5 +21,13 @@ class Searching {
         return hasFound
     }
     
+    func binarySearch(data: [Int], target: Int) -> Bool {
+        
+        var test = data
+        hasFound = false
+        return hasFound
+        
+    }
+    
     
 }
