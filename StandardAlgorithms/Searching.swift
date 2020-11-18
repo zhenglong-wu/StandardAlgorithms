@@ -10,10 +10,11 @@ import Foundation
 class Searching {
     
     func linearSearch(data: [Int], target: Int) -> Bool {
+        
         var test = data
-        hasFound = false
+        var hasFound = false
         for i in 0...data.count-1{
-            if data[i] = target{
+            if test[i] == target{
                 hasFound = true
                 return hasFound
             }
@@ -32,19 +33,19 @@ class Searching {
 
             let middle = Int(floor(Double(left + right) / 2.0))
 
-            if test[middle] < value{
+            if test[middle] < target{
                 left = middle + 1
             }
-            else if test[middle] > value{
+            else if test[middle] > target{
                 right = middle - 1
             }
             else{
                 hasFound = true
-                return true
+                return hasFound
             }
         }
 
-        return false
+        return hasFound
     }
     
 }
