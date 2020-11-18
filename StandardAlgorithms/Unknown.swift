@@ -26,8 +26,31 @@ class Unknown {
     func modeOfSorted(data: [Int]) -> (Int, Int){
         
         let test = data
-        return (0, 0)
-    
+        var current: Int
+        var count: Int
+        var modeCount: Int
+        var modeInteger: Int
+        var hasMore = true
+        
+        for i in 0...test.count-1{
+            current = test[i]
+            while hasMore == true{
+                if current = test[i+1]{
+                    count += 1
+                }
+                else{
+                    hasMore = false
+                }
+            }
+            if count > modeCount{
+                modeCount = count
+                modeInteger = current
+            }
+            else{
+                count = 0
+            }
+        }
+        return (modeInteger, modeCount)
     }
     
     func secondSmallestInteger(data: [Int]) -> Int? {
@@ -37,7 +60,7 @@ class Unknown {
             return nil
         }
         else{
-            
+            return nil
         }
     }
     
@@ -65,6 +88,5 @@ class Unknown {
             }
         }
         return (modeInteger, modeCount)
-        
     }
 }
