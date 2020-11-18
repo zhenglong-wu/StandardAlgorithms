@@ -34,6 +34,17 @@ class SortingTest: XCTestCase {
         }
     }
     
+    func testBubbleSortWithReversedIntegerArrayReturnsSortedArray() {
+        
+        let sorting = Sorting()
+        
+        let expected = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        
+        let result = sorting.bubbleSort(data: [9, 8, 7, 6, 5, 4, 3, 2, 1])
+        
+        XCTAssertEqual(result, expected)
+    }
+    
     func testInsertionSortWithIntegerArrayReturnsSortedArray() {
         
         let sorting = Sorting()
@@ -57,6 +68,17 @@ class SortingTest: XCTestCase {
             let result = sorting.insertionSort(data: test.data)
             XCTAssertEqual(result, test.expected)
         }
+    }
+    
+    func testInsertionSortWithReversedIntegerArrayReturnsSortedArray() {
+        
+        let sorting = Sorting()
+        
+        let expected = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        
+        let result = sorting.insertionSort(data: [9, 8, 7, 6, 5, 4, 3, 2, 1])
+        
+        XCTAssertEqual(result, expected)
     }
     
     func testQuickSortWithIntegerArrayReturnsSortedArray() {
@@ -83,6 +105,17 @@ class SortingTest: XCTestCase {
         }
     }
     
+    func testquiWithReversedIntegerArrayReturnsSortedArray() {
+        
+        let sorting = Sorting()
+        
+        let expected = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        
+        let result = sorting.quickSort(data: [9, 8, 7, 6, 5, 4, 3, 2, 1])
+        
+        XCTAssertEqual(result, expected)
+    }
+    
     func testMergeSortWithIntegerArrayReturnsSortedArray() {
         
         let sorting = Sorting()
@@ -107,4 +140,14 @@ class SortingTest: XCTestCase {
         }
     }
     
+    func testMergeSortWithReversedIntegerArrayReturnsSortedArray() {
+        
+        let sorting = Sorting()
+        
+        let expected = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        
+        let result = sorting.mergeSort(data: [9, 8, 7, 6, 5, 4, 3, 2, 1])
+        
+        XCTAssertEqual(result, expected)
+    }
 }

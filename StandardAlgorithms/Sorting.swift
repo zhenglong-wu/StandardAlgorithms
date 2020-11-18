@@ -10,7 +10,8 @@ import Foundation
 class Sorting {
     
     func bubbleSort(data: [Int]) -> [Int] {
-      var test = data
+      
+    var test = data
       var notSorted = true
       while notSorted == true {
         notSorted = false
@@ -27,6 +28,7 @@ class Sorting {
     }
     
     func insertionSort(data: [Int]) -> [Int] {
+        
         var test = data
         for index in 1..<test.count{
             var currentIndex = index
@@ -39,6 +41,7 @@ class Sorting {
     }
     
     func quickSort(data: [Int]) -> [Int] {
+        
         let test = data
         var sorted = [Int]()
         var left = [Int]()
@@ -98,7 +101,9 @@ class Sorting {
     func mergeSort(data: [Int]) -> [Int] {
         
         let test = data
-        guard test.count > 1 else { return test }
+        guard test.count > 1 else {
+            return test
+        }
     
         let middleIndex = test.count / 2
 
