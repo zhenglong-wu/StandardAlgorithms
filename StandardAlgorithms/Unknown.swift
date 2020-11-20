@@ -116,13 +116,7 @@ class Unknown {
     func getDomainNameFromURL(data: String) -> String {
         
         var test = data
-        
-        for i in 0...test.count-3{
-            var start = test.index(test.startIndex, offsetBy: i)
-            var end = test.index(test.endIndex, offsetBy: -1*test.count-1 + i)
-            var range = start..<end
-        }
-        
+
         return ""
         
     }
