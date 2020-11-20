@@ -70,7 +70,7 @@ class UnknownTest: XCTestCase {
         
         let expected = 3
         
-        let result = unknown.secondSmallestInteger(data: [2, 3, 4, 4, 5, 6, 7])
+        let result = unknown.secondSmallestInteger(data: [2, 3, 3, 4, 5, 6, 7])
         
         XCTAssertEqual(result, expected)
     }
