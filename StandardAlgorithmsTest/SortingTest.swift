@@ -150,4 +150,185 @@ class SortingTest: XCTestCase {
         
         XCTAssertEqual(result, expected)
     }
+    
+    func testPerformanceForBubbleSortWith500Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...500{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.bubbleSort(data: data)
+        }
+    }
+    
+    func testPerformanceForBubbleSortWith50Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...50{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.bubbleSort(data: data)
+        }
+    }
+    
+    func testPerformanceForBubbleSortWith5Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...5{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.bubbleSort(data: data)
+        }
+    }
+    
+    func testPerformanceForMergeSortWith500Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...500{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.mergeSort(data: data)
+        }
+    }
+    
+    func testPerformanceForMergeSorttWith50Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...50{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.mergeSort(data: data)
+        }
+    }
+    
+    func testPerformanceForMergeSortWith5Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...5{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.mergeSort(data: data)
+        }
+    }
+    
+    func testPerformanceForInsertionSortWith500Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...500{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.insertionSort(data: data)
+        }
+    }
+    
+    func testPerformanceForInsertionSortWith50Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...50{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.insertionSort(data: data)
+        }
+    }
+    
+    func testPerformanceForInsertionSortWith5Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...5{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.insertionSort(data: data)
+        }
+    }
+    
+    func testPerformanceForQuickSortWith500Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...500{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.quickSort(data: data)
+        }
+    }
+    
+    func testPerformanceForQuickSortWith50Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...50{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.quickSort(data: data)
+        }
+    }
+    
+    func testPerformanceForQuickSortWith5Integers() {
+        
+        let sorting = Sorting()
+        
+        var data = [Int]()
+        
+        for _ in 1...5{
+            data.append(Int.random(in: 1..<100))
+        }
+        
+        measure {
+            let _ = sorting.quickSort(data: data)
+        }
+    }
 }
+

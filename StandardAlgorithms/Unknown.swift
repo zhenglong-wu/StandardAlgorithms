@@ -113,11 +113,48 @@ class Unknown {
         return modeInteger
     }
     
-    func getDomainNameFromURL(data: String) -> String {
+    func determineURLType(data: String) -> String {
         
         var test = data
-
-        return ""
         
+        if String(test.suffix(4)) == ".com"{
+            test = String(test.prefix(test.count-4))
+        }
+        else if String(test.suffix(4)) == "org"{
+            test = String(test.prefix(test.count-4))
+        }
+        else if String(test.suffix(7)) == ".org.uk"{
+            test = String(test.prefix(test.count-7))
+        }
+        else if String(test.suffix(6)) == ".co.uk"{
+            test = String(test.prefix(test.count-6))
+        }
+        return test
+    }
+    
+    func removeExtraFromURL(test: String) -> String {
+        
+        let test = test
+        let array = Array(test)
+        
+        for i in stride(from: array.count-1, through: 0, by: -1){
+            if array[i] == "."{
+                return String(test.suffix((array.count-1)-i))
+              }
+        }
+        return ""
+    }
+    
+    func getDomainNameFromURL(data: String) -> String {
+        
+        let test = data
+        
+        let determinedType = determineURLType(data: test)
+        let extrasRemoved = removeExtraFromURL(test: determinedType)
+        
+        return extrasRemoved
     }
 }
+
+
+// .com .co.uk .org.uk

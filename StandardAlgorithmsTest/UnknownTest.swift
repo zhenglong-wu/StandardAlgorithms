@@ -74,4 +74,15 @@ class UnknownTest: XCTestCase {
         
         XCTAssertEqual(result, expected)
     }
+    
+    func testGetDomainNameFromURLWithSingleURLReturnsDomainName(){
+        
+        let unknown = Unknown()
+        
+        let expected = "wfg"
+        
+        let result = unknown.getDomainNameFromURL(data: "www.wfg.org.uk")
+        
+        XCTAssertEqual(result, expected)
+    }
 }
