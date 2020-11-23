@@ -1,0 +1,125 @@
+
+OCR Type Pseudocode For Unknown Algorithms
+
+Sum of First and Last of Array:
+
+start procedure sumOfFirstAndLast(data)
+    test = data
+    if test.length == 1 then
+        return test[0] * 2
+    elseif test.length < 1 then
+        return 0
+    else
+        return (test[0] + test[test.length-1])
+end procedure sumOfFirstAndLast()
+
+
+Mode of Sorted Array:
+
+start procedure modeOfSorted(data)
+    test = data
+    if test.length <= 2 then
+        return test[1]
+    else
+        index = 0
+        modeCount = 0
+        modeInteger = 0
+        counter = 0
+        current = 0
+        while index < test.length
+            current = test[index]
+            counter = 1
+            while index + 1 < test.length AND test[index] == test[index + 1]
+                counter += 1
+                index += 1
+            if counter > modeCount then
+                modeCount = counter
+                modeInteger = current
+            index += 1
+        return modeInteger
+end procedure modeOfSorted()
+
+
+Mode of Unsorted Array:
+
+start procedure modeOfUnsorted(data)
+    test = data
+    current = 0
+    count = 0
+    modeCount = 0
+    modeInteger = 9
+    for i = 0 to test.length - 1
+        current = test[i]
+        for i = 0 to test.length - 1
+            if current = test[i] then
+                count += 1
+        if count > modeCount then
+            modeCount = count
+            modeInteger = current
+        else
+            count = 0
+        return modeInteger
+end procedure modeOfUnsorted()
+    
+    
+Second Smallest Integer of Array:
+
+start procedure removeSmallestInteger(data)
+    test = data
+    smallest = test[0]
+    for i = 0 to test.length - 1
+        if smallest > test[i] then
+            smallest = test[i]
+    test = test.remove(smallest)
+    return test
+end procedure removeSmallestInteger()
+
+start procedure secondSmallestInteger(data)
+    test = data
+    if test.length < 2 then
+        return nil
+    else
+        let smallestIntegerRemoved = removeSmallestInteger(data)
+        smallest = smallestIntegerRemoved[0]
+        for i = 1 to smallestIntegerRemoved.length - 1
+        if smallest > test[i] then
+            smallest = test[i]
+        return smallest
+end procedure secondSmallestInteger()
+
+
+Domain Name from URL:
+
+start procedure determineURLType(data)
+    test = data
+    if test.subString(test.length - 1, -4) = ".com" then
+        test = test.subString(0, test.length - 4)
+    elseif test.subString(test.length - 1, -4) = ".org" then
+        test = test.subString(0, test.length - 4)
+    elseif test.subString(test.length - 1, -7) = ".org.uk" then
+        test = test.subString(0, test.length - 7)
+    elseif test.subString(test.length - 1, -6) = ".co.uk" then
+        test = test.subString(0, test.length - 6)
+    return test
+end procedure determineURLType()
+
+start procedure removeExtraFromURL(test)
+    test = test
+    array = Array(test)
+    for i = array.length - 1 to 0
+        if array[i] = "." then
+            return test.subString(test.length - 1, array.length - i)
+    return ""
+end procedure removeExtraFromURL()
+
+start procedure getDomainNameFromURL(data)
+    test = data
+    determinedType = determineURLType(data)
+    extrasRemoved = removeExtraFromURL(determinedType)
+    return extrasRemoved
+end procedure getDomainNameFromURL()
+
+            
+    
+
+

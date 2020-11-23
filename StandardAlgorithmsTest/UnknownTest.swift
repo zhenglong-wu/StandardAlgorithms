@@ -79,9 +79,9 @@ class UnknownTest: XCTestCase {
         
         let unknown = Unknown()
         
-        let expected = "wfg"
+        let expected = "outlook"
         
-        let result = unknown.getDomainNameFromURL(data: "www.wfg.org.uk")
+        let result = unknown.getDomainNameFromURL(data: "www.outlook.com")
         
         XCTAssertEqual(result, expected)
     }

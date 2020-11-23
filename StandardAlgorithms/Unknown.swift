@@ -120,7 +120,7 @@ class Unknown {
         if String(test.suffix(4)) == ".com"{
             test = String(test.prefix(test.count-4))
         }
-        else if String(test.suffix(4)) == "org"{
+        else if String(test.suffix(4)) == ".org"{
             test = String(test.prefix(test.count-4))
         }
         else if String(test.suffix(7)) == ".org.uk"{
@@ -156,5 +156,3 @@ class Unknown {
     }
 }
 
-
-// .com .co.uk .org.uk
